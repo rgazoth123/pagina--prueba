@@ -74,18 +74,22 @@ h1{
 .contenedorBanner
 {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: auto;
   width: 100%;
   height: 80%;
 }
-
-.bannerPagina
+.slide{
+  margin-top: 10px;
+}
+.slide img{
+  height: 50vw;
+}
+/*.bannerPagina
 {
   width: 100%;
   height: 100%;
-}
+}*/
 .banner
 {
   grid-area: banner;
@@ -308,7 +312,7 @@ footer
   }
   
   /* Add a grey background color to dropdown links on hover */
-  .menudropdown-content li:hover {
+  .menudropdown-content a:hover {
     background-color:rgb(83, 172, 231);
   }
   
