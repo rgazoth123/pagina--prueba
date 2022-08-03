@@ -1,338 +1,213 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-.bodyPage
-{
-  display: grid;
-  background-color:#a0dff1;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 1em;
-  grid-template-areas:
-  "header1 header1 header1"
-  "banner banner banner"
-  "Titulo Titulo Titulo"
-  "logoAhorros logoCreditos logoServicios"
-  "infoAhorros infoCreditos infoServicios"
-  "eventos eventos mapa"
-  "footer footer footer"
-  ;  
-}
-
-header
-{
+@charset "UTF-8";
+/* Navbar container */
+header {
   grid-area: header1;
   position: sticky;
   top: 0;
-  z-index: 2;
-}
-.header
-{
+  z-index: 2; }
+
+.header {
   display: flex;
-  background: rgb(248, 248, 248);
-  width: 100%; 
-  height: 100px;
-}
-
-h1{
-  grid-area: Titulo;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #f8f8f8;
   width: 100%;
-  height: 100%;
-  font-size: 2.3vw;
-}
+  height: 100px; }
 
-/*.headerFixed
-{
-    position: fixed;
-}*/
-.contenedorLogo
-{
-    width: 30%;
-    display: flex;
-}
-.logo
-{
-  background: transparent;
-  width: 90%;
-  height: 90%;
-  margin: auto;
-}
-.menuOpciones a{
-    color: #020d12;
-}
-.menuOpciones
-{
-  background: transparent;
-  width: 70%;
-  align-items: center;
-}
-
-.contenedorBanner
-{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  height: 80%;
-}
-.slide{
-  margin-top: 10px;
-}
-.slide img{
-  height: 40vw;
-}
-/*.bannerPagina
-{
-  width: 100%;
-  height: 100%;
-}*/
-.banner
-{
-  grid-area: banner;
-}
-/*main
-{
-  grid-area: opcPrincipal;
-}*/
-.logoAhorros
-{
-  grid-area: logoAhorros;
-}
-.logoCreditos
-{
-  grid-area: logoCreditos;
-}
-.logoServicios
-{
-  grid-area: logoServicios;
-}
-.infoAhorros
-{
-  grid-area: infoAhorros;
-}
-.infoCreditos
-{
-  grid-area: infoCreditos;
-}
-.infoServicios
-{
-  grid-area: infoServicios;
-}
-.opcionesPrincipales
-{
-  grid-area: opcPrincipal;
-}
-.contenedorOpciones
-{
-  display: flex;
-  align-items: center;
-  width: 100%; 
-  height: 10%;
-}
-.opciones
-{
-  width: 60%;
-  height: 100%;
-  margin-left:auto;
-  margin-right:auto;
-}
-.opciones>p
-{
-  width: 100%;
-  height: 100%;
-  font-size: 1.1vw;
-  text-align: center;
-}
-.eventos
-{
-  grid-area: eventos;
-}
-.mapa
-{
-  grid-area: mapa;
-}
-h2
-{
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 8%;
-  margin: auto;
-  font-size: 2vw;
-}
-.contenedor
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  height: 90%;
-}
-
-.fuente p{
-  font-size: 1.3rem;
-}
-.fuente a{
-  font-size: 1.3rem;
-}
-.fuente h5{
-  font-size: 1.5rem;
-  color: white;
-}
-
-footer
-{
-  grid-area: footer;
-  width: 100%;
-  background-color: rgb(71, 70, 70) ;
-}
-
-.imagenAhCr
-{
-  width:60%;
-  height: 60%;
-}
-
-.imagenAhorrosCreditos
-{
-  width: 90%;
-  display: flex;
-  margin: auto;
-}
-
-.formularioContacto
-{
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
-
-/*MEDIA QUERY DE MOBILE FIRST*/
-@media(max-width:480px)
-{
-  .bodyPage
-  {
-    display: grid;
-    grid-template-areas: 
-    "header1 header1 header1"
-    "banner banner banner"
-    "Titulo Titulo Titulo"
-    "logoAhorros logoAhorros logoAhorros"
-    "infoAhorros infoAhorros infoAhorros"
-    "logoCreditos logoCreditos logoCreditos"
-    "infoCreditos infoCreditos infoCreditos"
-    "logoServicios logoServicios logoServicios"
-    "infoServicios infoServicios infoServicios"
-    "eventos eventos eventos"
-    "mapa mapa mapa"
-    "footer footer footer"
-  ;
-  }
-}
-
-.animacion {
-  animation-duration: 5s;
-  animation-name: anim;
-  animation-iteration-count: 1;
-}
-@keyframes anim{
-  from {
-      -webkit-transform: rotate(0deg);
-      transform: rotateY(0deg);
-  }
-  50%{
-      -webkit-transform: rotate(360deg);
-      transform: rotateY(360deg);
-  } to {
-      -webkit-transform: rotate(360deg);
-      transform: rotateY(360deg);
-      }
-}
-
-
-
-/* Navbar container */
 .navbarra {
   overflow: hidden;
   background-color: transparent;
-  font-family: Arial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 25px;
-  margin-bottom: 25px;
-  }
-  
-  /* Links inside the navbar */
+  margin-bottom: 25px; }
   .navbarra a {
     float: left;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: left;
     padding: 14px 18px;
-    text-decoration: none;
-  }
-  .navbar a {
-    float: left;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    padding: 14px 18px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .menudropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
+    text-decoration: none; }
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  padding: 14px 18px;
+  text-decoration: none; }
+
+/* The dropdown container */
+.menudropdown {
+  float: left;
+  overflow: hidden; }
   .menudropdown .menudropbtn {
     font-size: 20px;
     border: none;
     outline: none;
-    color: rgb(0, 0, 0);
+    color: black;
     padding: 14px 18px;
     background-color: inherit;
-    font-family: inherit; 
-    margin: 0; 
-    cursor: pointer;
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbarra a:hover, .menudropdown:hover .menudropbtn {
-    background-color: rgb(83, 172, 231);
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .menudropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .menudropdown-content a{
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer; }
+
+/* Dropdown button */
+/* Add a red background color to navbar links on hover */
+.navbarra a:hover, .menudropdown:hover .menudropbtn {
+  background-color: #53ace7; }
+
+/* Dropdown content (hidden by default) */
+.menudropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+  .menudropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .menudropdown-content a:hover {
-    background-color:rgb(83, 172, 231);
-  }
-  
-  /* Show the dropdown menu on hover */
-  .menudropdown:hover .menudropdown-content {
-    display: block;
-  }
+    text-align: left; }
+    .menudropdown-content a:hover {
+      background-color: #53ace7; }
+
+/* Links inside the dropdown */
+/* Add a grey background color to dropdown links on hover */
+/* Show the dropdown menu on hover */
+.menudropdown:hover .menudropdown-content {
+  display: block; }
+
+footer {
+  background-color: #474646; }
+
+.fuente p, .fuente a {
+  font-size: 1em; }
+
+.fuente h5 {
+  font-size: 1em;
+  color: white; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #e5f5fa; }
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2.3vw; }
+
+/*.headerFixed
+  {
+      position: fixed;
+  }*/
+.contenedorLogo {
+  width: 30%;
+  display: flex; }
+
+.logo {
+  background: transparent;
+  width: 70%;
+  height: 90%;
+  margin: auto; }
+
+.menuOpciones {
+  background: transparent;
+  width: 70%;
+  align-items: center; }
+  .menuOpciones a {
+    color: black; }
+
+.contenedorBanner {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 80%; }
+
+.slide {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .slide img {
+    height: 40vw; }
+
+.eventos .slide img {
+  height: 30vw; }
+
+.mapa {
+  width: 100%;
+  height: 30vw; }
+
+.tamañoSlide {
+  width: 5%; }
+
+.btnPreviusNext {
+  background-color: #dfd5d5;
+  opacity: 80%;
+  width: 40%;
+  height: 15%; }
+
+/*.bannerPagina
+  {
+    width: 100%;
+    height: 100%;
+  }*/
+/*main
+  {
+    grid-area: opcPrincipal;
+  }*/
+.animacion {
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 1%; }
+
+.containerOpciones {
+  width: 90%; }
+
+.logoOpciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+
+.descripcionOpc {
+  font-size: 1vw;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+/***** PAGINA AHORROS Y CREDITOS *****/
+.imagenAhCr {
+  width: 100%;
+  height: 100%; }
+
+.imagenAhorrosCreditos {
+  width: 90%;
+  display: flex;
+  margin: auto; }
+
+.tituloAhorro {
+  font-size: 2vw;
+  text-align: center; }
+
+.formularioContacto {
+  width: 50%;
+  text-align: center;
+  margin: auto; }
+
+/***** PAGINA SERVICIOS *****/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container img {
+    width: 100%;
+    height: 50%; }
