@@ -1,0 +1,26 @@
+/* EACH *///Lo usamos con listas
+
+$colores: 'pink', 'green', 'black';
+@each $color in $colores 
+{
+    .#{$color} {
+        color: #{$color};
+    }
+}
+
+/*MAPS*/
+$mapRedes:(facebook:blue,instagram:pink,twitter:aquamarine);
+@each $red,$color in $mapRedes{
+    .#{$red}{
+        color:$color;
+    }
+}
+
+
+/* MAP - GET*/
+$estilo:(color:red, tamFuente:30px);
+.pruebaMapGet
+{
+    background-color: map-get($map: $estilo, $key: color);
+    font-size: map-get($map: $estilo, $key: tamFuente);
+}
