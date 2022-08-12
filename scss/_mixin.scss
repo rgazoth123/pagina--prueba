@@ -1,0 +1,21 @@
+@mixin contenido
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contenidoParrafo{
+    @include contenido;
+}
+
+@mixin contenidoConParametros ($size,$alineacion)
+{
+    font-size: $size;
+    text-align: $alineacion;
+}
+
+.contenidoConMixin
+{
+    @include contenidoConParametros(50px, right);
+}
