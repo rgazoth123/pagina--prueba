@@ -15,54 +15,56 @@
 
 <body>     
     <header> 
-        <section class="header">
-                <div class="contenedorLogo">
-                    <a href="./index.html" class="contenedorLogo logo">
-                    <img src="images/cooperativa-logo.png" alt="logo" class="header logo"></a>
-                </div>              
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">INICIO</a>
-                                </li>
-                                <li class="menudropdown">
-                                    <button onclick="location.href='pages/ahorros.html'" class="menudropbtn">
-                                    AHORROS
-                                    </button>
-                                    <div class="menudropdown-content">
-                                        <a href="#">Ahorro Simple</a>
-                                        <a href="#">Ahorro a Plazo Fijo</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="pages/creditos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    CREDITOS
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Credito Personal</a></li>
-                                    <li><a class="dropdown-item" href="#">Credito Grupal</a></li>
-                                    <li><a class="dropdown-item" href="#">Credito convenio</a></li>
-                                </ul>
-                                </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/haztesocio.html">HAZTE SOCIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-                            </li>
-                            </ul>
-                      </div>
-                    </div>
-                </nav>      
-        </section> 
+      <section class="header">
+        <!-- <div class="contenedorLogo">
+            <a href="../index.html" class="contenedorLogo logo">
+            <img src="../images/cooperativa-logo.png" alt="logo" class="header logo"></a>
+        </div>               -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a href="../index.html">
+                <img src="../images/cooperativa-logo.png" alt="logo" class="header logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="menudropdown">
+                            <button onclick="location.href='/pages/ahorros.html'" class="menudropbtn">
+                            AHORROS
+                            </button>
+                            <div class="menudropdown-content">
+                                <a href="#">Ahorro Simple</a>
+                                <a href="#">Ahorro a Plazo Fijo</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/creditos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CREDITOS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Credito Personal</a></li>
+                            <li><a class="dropdown-item" href="#">Credito Grupal</a></li>
+                            <li><a class="dropdown-item" href="#">Credito convenio</a></li>
+                        </ul>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/haztesocio.html">HAZTE SOCIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                    </li>
+                    </ul>
+              </div>
+            </div>
+        </nav> 
+    </section>
     </header>  
     <section class="banner">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -146,8 +148,7 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12">
           <h2>VISITANOS</h2>
-          <div class="mapa
-          ">
+          <div class="mapa">
               <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d485.5965127147668!2d-74.22408348985341!3d-13.176764307613718!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1657827584631!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
           </div>
         </div>
@@ -155,44 +156,45 @@
     </section>  
 
     <div class="container-fluid">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-3 border-top border-bottom posicionFooter">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 border-top border-bottom posicionFooter">
           <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img src="images/cooperativa-logo.png" class="bi me-2" width="48%" height="30%">
+            <a href="/" class="d-flex align-items-center my-3 link-dark text-decoration-none">
+              <img src="images/cooperativa-logo.png" class="bi mb-2" width="70%" height="50%">
             </a>
             <p class="text-muted">Todos los derechos reservados &copy;2022</p>
           </div>      
       
           <div class="col mb-3">
-            <h5>Section</h5>
+            <h3>Acerca de</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">¿Quienes somor?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Organigrama</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documentos Legales</a></li>
             </ul>
           </div>
       
           <div class="col mb-3">
-            <h5>Section</h5>
+            <h3>Ahorros</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ahorro Simple</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ahorro a plazo fijo</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ahorro infantil</a></li>
             </ul>
           </div>
       
           <div class="col mb-3">
-            <h5>Section</h5>
+            <h3>Creditos</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Credito simple</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Credito convenio</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Credito grupal</a></li>
+            </u l>
+          </div>
+          <div class="col mb-3">
+            <h3>Contacto</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Numero Fijo: 066-405487</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Celular: 966457812</a></li>
             </ul>
           </div>
         </footer>

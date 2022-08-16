@@ -1,7 +1,6 @@
 /* Navbar container */
   
 header {
-  grid-area: header1;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -24,7 +23,7 @@ header {
     a {
       float: left;
       font-size: 20px;
-      color: $color-black;
+      color: $color-texto;
       text-align: left;
       padding: 14px 18px; 
       text-decoration: none;
@@ -33,15 +32,17 @@ header {
   
   /* Links inside the navbar */
   
-  .navbar a {
+  .navbar {
+  a {
     float: left;
     font-size: 20px;
-    color: $color-black;
+    color: $color-texto;
     text-align: left;
     padding: 14px 18px;
     text-decoration: none;
+
   }
-  
+  }
   /* The dropdown container */
   
   .menudropdown {
@@ -52,7 +53,7 @@ header {
       font-size: 20px;
       border: none;
       outline: none;
-      color: $color-black;
+      color: $color-texto;
       padding: 14px 18px;
       background-color: inherit;
       font-family: inherit;
@@ -68,6 +69,10 @@ header {
   .navbarra a:hover, .menudropdown:hover .menudropbtn {
     background-color: rgb(83, 172, 231);
   }
+
+  .nav-item a:hover {
+    background-color: rgb(83, 172, 231);
+  }
   
   /* Dropdown content (hidden by default) */
   
@@ -81,7 +86,7 @@ header {
   
     a {
       float: none;
-      color: $color-black;
+      color: $color-texto;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
@@ -99,4 +104,9 @@ header {
   
   .menudropdown:hover .menudropdown-content {
     display: block;
+  }
+
+  .show
+  {
+    background-color: $color-navegacion;
   }

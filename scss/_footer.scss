@@ -4,12 +4,13 @@ footer {
       
 h5 {
   font-size: $texto-footer;
-  color: white;
+  color: $color-texto;
 }
 
 .posicionFooter
 {
   margin-top: 20px;
+  background-color: $color-footer;
 }
 
   

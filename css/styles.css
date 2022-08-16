@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* Navbar container */
 header {
-  grid-area: header1;
   position: sticky;
   top: 0;
   z-index: 2; }
@@ -55,6 +54,9 @@ header {
 .navbarra a:hover, .menudropdown:hover .menudropbtn {
   background-color: #53ace7; }
 
+.nav-item a:hover {
+  background-color: #53ace7; }
+
 /* Dropdown content (hidden by default) */
 .menudropdown-content {
   display: none;
@@ -79,15 +81,19 @@ header {
 .menudropdown:hover .menudropdown-content {
   display: block; }
 
+.show {
+  background-color: #f8f8f8; }
+
 footer {
   background-color: #474646; }
 
 h5 {
   font-size: 1em;
-  color: white; }
+  color: black; }
 
 .posicionFooter {
-  margin-top: 20px; }
+  margin-top: 20px;
+  background-color: #f8f8f8; }
 
 * {
   padding: 0;
