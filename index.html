@@ -16,13 +16,9 @@
 <body>     
     <header> 
       <section class="header">
-        <!-- <div class="contenedorLogo">
-            <a href="../index.html" class="contenedorLogo logo">
-            <img src="../images/cooperativa-logo.png" alt="logo" class="header logo"></a>
-        </div>               -->
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a href="../index.html">
+              <a href="../index.html" class="contenedorLogo">
                 <img src="../images/cooperativa-logo.png" alt="logo" class="header logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"        aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,8 +33,8 @@
                             AHORROS
                             </button>
                             <div class="menudropdown-content">
-                                <a href="#">Ahorro Simple</a>
-                                <a href="#">Ahorro a Plazo Fijo</a>
+                                <a href="pages/ahorros.html">Ahorro Simple</a>
+                                <a href="pages/ahorros.html">Ahorro a Plazo Fijo</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -46,9 +42,9 @@
                             CREDITOS
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Credito Personal</a></li>
-                            <li><a class="dropdown-item" href="#">Credito Grupal</a></li>
-                            <li><a class="dropdown-item" href="#">Credito convenio</a></li>
+                            <li><a class="dropdown-item" href="pages/creditos.html">Credito Personal</a></li>
+                            <li><a class="dropdown-item" href="pages/creditos.html">Credito Grupal</a></li>
+                            <li><a class="dropdown-item" href="pages/creditos.html">Credito convenio</a></li>
                         </ul>
                         </li>
                     <li class="nav-item">
@@ -66,6 +62,7 @@
         </nav> 
     </section>
     </header>  
+
     <section class="banner">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -89,47 +86,56 @@
             </button>
         </div>
     </section>
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
     <h1 class="animacion">NUESTROS SERVICIOS</h1>
     </div>
     <section class="container-fluid containerOpciones">
-            <div class="row w-100 my-5 mx-auto">
-              <div class="col-md-4 col-lg-4 col-sm-12 my-3 py-4 logoOpciones">
-                  <img src="images/ahorros.png" alt="logo-ahorros" width="40%" height="50%">
+            <div class="row w-100 my-1 mx-auto">
+              <div class="col-md-4 col-lg-4 col-sm-12 my-3 logoOpciones">
+                  <img src="images/ahorros.png" alt="logo-ahorros" width="180" height="180">
                   <div class="descripcionOpc">
-                    <h2 class="my-3 px-4">AHORROS</h2>
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur, commodi rem ex quod illo amet. Suscipit eaque vero pariatur quis a nesciunt numquam modi maiores quam, aspernatur deleniti laudantium!</p>
+                    <h2 class="my-4">AHORROS</h2>
+                    <div class="textoOpc">Tenemos las mejores opciones en ahorros para que pueda darle mayor ganancia a su esfuerzo, elija entre nuestras tres cuentas pensadas en su mayor beneficio.</div>
+                      <div>
+                        <button class="btnOpciones">Conocer mas...</button>
+                      </div>
                   </div>
               </div>
-              <div class="col-md-4 col-lg-4 col-sm-12 my-3 py-4 logoOpciones">
-                  <img src="images/creditos.png" alt="logo-creditos" width="40%" height="50%">
+              <div class="col-md-4 col-lg-4 col-sm-12 my-3 logoOpciones">
+                  <img src="images/creditos.png" alt="logo-creditos" width="180" height="180">
                   <div class="descripcionOpc">
-                    <h2 class="my-3 px-4">CREDITOS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur, commodi rem ex quod illo amet. Suscipit eaque vero pariatur quis a nesciunt numquam modi maiores quam, aspernatur deleniti laudantium!</p>
+                    <h2 class="my-4">CREDITOS</h2>
+                    <div class="textoOpc">Recompensamos tu constancia  con la mejor rentabilidad y las tasas de interés más competitivas del mercado.</div>
+                    <div>
+                      <button class="btnOpciones">Conocer mas...</button>
+                    </div>
                   </div>
               </div>
-              <div class="col-md-4 col-lg-4 col-sm-12 my-3 py-4 logoOpciones">
-                  <img src="images/servicios.jpg" alt="logo-servicios" width="40%" height="50%">
+              <div class="col-md-4 col-lg-4 col-sm-12 my-3 logoOpciones">
+                  <img src="images/servicios.jpg" alt="logo-servicios" width="180" height="180">
                   <div class="descripcionOpc">
-                    <h2 class="my-3 px-4">SERVICIOS</h2>
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur, commodi rem ex quod illo amet. Suscipit eaque vero pariatur quis a nesciunt numquam modi maiores quam, aspernatur deleniti laudantium!</p>
+                    <h2 class="my-4">SERVICIOS</h2>
+                    <div class="textoOpc">Contamos con dos simuladores del area de Ahorros y Creditos para que puedas conocer más acerca del servicio que ofrecemos</div>
+                    <div>
+                      <button class="btnOpciones">Conocer mas...</button>
+                    </div>
                   </div>
               </div>
             </div> 
       </section>
-     
-    <section class="container-fluid">
+
+    <section class="container-fluid my-5">
       <div class="row row-cols-1">
         <div class="col-lg-8 col-md-12 col-sm-12">
-          <h2>ULTIMOS EVENTOS</h2>
+          <h2 class="animacion">ULTIMOS EVENTOS</h2>
           <section class="eventos">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="images/banner1.jpg" class="d-block w-100" alt="banner-1">
+                    <img src="images/bannerNoticias.jpg" class="d-block w-100" alt="banner-1">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/banner.jpg" class="d-block w-100" alt="banner-2">
+                    <img src="images/bannerNoticias2.jpg" class="d-block w-100" alt="banner-2">
                   </div>
                   <div class="carousel-item">
                     <img src="images/banner1.jpg" class="d-block w-100" alt="banner-3">
@@ -147,7 +153,7 @@
           </section>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12">
-          <h2>VISITANOS</h2>
+          <h2 class="animacion">VISITANOS</h2>
           <div class="mapa">
               <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d485.5965127147668!2d-74.22408348985341!3d-13.176764307613718!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1657827584631!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
           </div>
@@ -159,42 +165,42 @@
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 border-top border-bottom posicionFooter">
           <div class="col mb-3">
             <a href="/" class="d-flex align-items-center my-3 link-dark text-decoration-none">
-              <img src="images/cooperativa-logo.png" class="bi mb-2" width="70%" height="50%">
+              <img src="images/cooperativa-logo.png" alt="logo-cope" class="bi mb-2" width="70%" height="50%">
             </a>
-            <p class="text-muted">Todos los derechos reservados &copy;2022</p>
+            <section class="text-muted">Todos los derechos reservados &copy;2022</section>
           </div>      
       
           <div class="col mb-3">
             <h3>Acerca de</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">¿Quienes somor?</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Organigrama</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documentos Legales</a></li>
+              <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">¿Quienes somos?</a></li>
+              <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Organigrama</a></li>
+              <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Documentos Legales</a></li>
             </ul>
           </div>
       
           <div class="col mb-3">
             <h3>Ahorros</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ahorro Simple</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ahorro a plazo fijo</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ahorro infantil</a></li>
+              <li class="nav-item mb-2"><a href="pages/ahorros.html" class="nav-link p-0 text-muted">Ahorro Simple</a></li>
+              <li class="nav-item mb-2"><a href="pages/ahorros.html" class="nav-link p-0 text-muted">Ahorro a plazo fijo</a></li>
+              <li class="nav-item mb-2"><a href="pages/ahorros.html" class="nav-link p-0 text-muted">Ahorro infantil</a></li>
             </ul>
           </div>
       
           <div class="col mb-3">
             <h3>Creditos</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Credito simple</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Credito convenio</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Credito grupal</a></li>
+              <li class="nav-item mb-2"><a href="pages/creditos.html" class="nav-link p-0 text-muted">Credito simple</a></li>
+              <li class="nav-item mb-2"><a href="pages/creditos.html" class="nav-link p-0 text-muted">Credito convenio</a></li>
+              <li class="nav-item mb-2"><a href="pages/creditos.html" class="nav-link p-0 text-muted">Credito grupal</a></li>
             </u l>
           </div>
           <div class="col mb-3">
             <h3>Contacto</h3>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Numero Fijo: 066-405487</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Celular: 966457812</a></li>
+              <li class="nav-item mb-2 nav-link p-0 text-muted">Numero Fijo: 066-405487</li>
+              <li class="nav-item mb-2 nav-link p-0 text-muted">Celular: 966457812</li>
             </ul>
           </div>
         </footer>
